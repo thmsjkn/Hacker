@@ -2,13 +2,13 @@
 
   <% if (item.link){ %>
     <% if (item.title){ %>
-    <h3 class="article-title"><a href="<%- item.link %>" target="_blank"><span><%= item.title %></span></a></h3>
+    <h3 class="article-title"><a href="<%- item.link %>index.html" target="_blank"><span><%= item.title %></span></a></h3>
     <% } else { %>
-    <h3 class="article-title"><a href="<%- item.link %>" target="_blank"><span><%= item.link %></span></a></h3>
+    <h3 class="article-title"><a href="<%- item.link %>index.html" target="_blank"><span><%= item.link %></span></a></h3>
     <% } %>
   <% } else { %>
     <% if (index){ %>
-    <h3 class="article-title"><a href="<%- config.root %><%- item.path %>"><span><%= item.title %></span></a></h3>
+    <h3 class="article-title"><a href="<%- config.root %><%- item.path %>index.html"><span><%= item.title %></span></a></h3>
     <% } else { %>
     <h3 class="article-title"><span><%= item.title %></span></h3>
     <% } %>
@@ -16,7 +16,7 @@
 
   <div class="article-top-meta">
     <span class="posted-on">
-      <a href="<%- config.root %><%- item.path %>" rel="bookmark">
+      <a href="<%- config.root %><%- item.path %>index.html" rel="bookmark">
         <time class="entry-date published" datetime="<%= item.date.toDate().toISOString() %>">
           <%= item.date.format(config.date_format) %>
         </time>
@@ -57,7 +57,7 @@
       <%
         var cats = [];
         item.categories.forEach(function(cat){
-            cats.push('<a href="' + config.root + cat.path + '">' + cat.name + '</a>');
+            cats.push('<a href="' + config.root + cat.path + 'index.html">' + cat.name + '</a>');
         });
       %>
 
@@ -71,7 +71,7 @@
     <%
         var tags = [];
         item.tags.forEach(function(tag){
-            tags.push('<a href="' + config.root + tag.path + '">' + tag.name + '</a>');
+            tags.push('<a href="' + config.root + tag.path + 'index.html">' + tag.name + '</a>');
         });
     %>
 

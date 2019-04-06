@@ -1,14 +1,14 @@
 menu:
   Home: /
-  Info: /Information
-  Archiv: /Archiv
+  Info: /Information/index.html
+  Archiv: /Archiv/index.html
   Instagram: https://instagram.com/tomjkn
   Facebook: https://www.facebook.com/thmsjkn
   Flickr: https://www.flickr.com/people/bonalumo/
 
 footer:
-  Datenschutzerklärung: /Datenschutz
-  Impressum: /Impressum
+  Datenschutzerklärung: /Datenschutz/index.html
+  Impressum: /Impressum/index.html
   
 # gitment
 gitment: false
