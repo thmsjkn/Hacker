@@ -1,7 +1,12 @@
 menu:
   Home: /
+  Info: /Info
   Archives: /archives
 
+footer:
+  Datenschutzerklärung: /Datenschutz
+  Impressum: /Impressum
+  
 # gitment
 gitment: false
 gitment_owner:
