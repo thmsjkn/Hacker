@@ -16,11 +16,9 @@
 
   <div class="article-top-meta">
     <span class="posted-on">
-      <a href="<%- config.root %><%- item.path %>index.html" rel="bookmark">
         <time class="entry-date published" datetime="<%= item.date.toDate().toISOString() %>">
           <%= item.date.format(config.date_format) %>
         </time>
-      </a>
     </span>
   </div>
 
