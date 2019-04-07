@@ -29,6 +29,9 @@ if (page.archive){
             <h3 class="archive-title"><a href="<%- config.root %><%- item.path %>index.html"><span><%= item.title %></span></a></h3>
           <% } %>
         </div>
+        <% if (item.photos) { %>
+          <div class="featured-media"><img src="<%- url_for(item.photos[0]) %>" class="attachment-post-thumbnail size-post-thumbnail"></div>
+        <% } %>
       </div>
     <% }); %>
     <%- partial('pagination') %>
