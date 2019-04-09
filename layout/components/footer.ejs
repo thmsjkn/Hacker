@@ -5,9 +5,9 @@
     <% } else { %>
     &copy; <%= new Date().getFullYear() %> <%= config.title %>
     <% } %><br />
-    <% if (theme.footer) { %>
-      <% for (var i in theme.footer){ %>
-        <a href="<%- url_for(theme.footer[i]) %>"><%= __(i) %></a>
+    <% if (config.footer) { %>
+      <% for (var i in config.footer){ %>
+        <a href="<%- url_for(config.footer[i]) %>"><%= __(i) %></a>
       <br />
       <% } %>
     <% } %>
