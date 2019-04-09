@@ -2,11 +2,105 @@
 $bodyBgColor = #f7f7f7
 $mainBgColor = #ffffff
 
+@font-face {
+    font-family: "Merriweather";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/Merriweather/Merriweather-Regular.ttf")
+}
+@font-face {
+    font-family: "Merriweather";
+    font-weight: normal;
+    font-style: italic;
+    src: url("../fonts/Merriweather/Merriweather-italic.ttf")
+}
+@font-face {
+    font-family: "Merriweather";
+    font-weight: bold;
+    font-style: normal;
+    src: url("../fonts/Merriweather/Merriweather-Bold.ttf")
+}
+@font-face {
+    font-family: "Merriweather";
+    font-weight: bold;
+    font-style: italic;
+    src: url("../fonts/Merriweather/Merriweather-BoldItalic.ttf")
+}
+@font-face {
+    font-family: "Merriweather";
+    font-weight: bolder;
+    font-style: normal;
+    src: url("../fonts/Merriweather/Merriweather-Black.ttf")
+}
+@font-face {
+    font-family: "Merriweather";
+    font-weight: lighter;
+    font-style: italic;
+    src: url("../fonts/Merriweather/Merriweather-LightItalic.ttf")
+}
+@font-face {
+    font-family: "Merriweather";
+    font-weight: lighter;
+    font-style: normal;
+    src: url("../fonts/Merriweather/Merriweather-Light.ttf")
+}
+
+@font-face {
+    font-family: "MerriweatherSans";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/MerriweatherSans/MerriweatherSans-Regular.ttf")
+}
+@font-face {
+    font-family: "MerriweatherSans";
+    font-weight: normal;
+    font-style: italic;
+    src: url("../fonts/MerriweatherSans/MerriweatherSans-Italic.ttf")
+}
+@font-face {
+    font-family: "MerriweatherSans";
+    font-weight: bold;
+    font-style: normal;
+    src: url("../fonts/MerriweatherSans/MerriweatherSans-Bold.ttf")
+}
+@font-face {
+    font-family: "MerriweatherSans";
+    font-weight: bold;
+    font-style: italic;
+    src: url("../fonts/MerriweatherSans/MerriweatherSans-BoldItalic.ttf")
+}
+@font-face {
+    font-family: "MerriweatherSans";
+    font-weight: bolder;
+    font-style: normal;
+    src: url("../fonts/MerriweatherSans/MerriweatherSans-ExtraBold.ttf")
+}
+@font-face {
+    font-family: "MerriweatherSans";
+    font-weight: bolder;
+    font-style: italic;
+    src: url("../fonts/MerriweatherSans/MerriweatherSans-ExtraBoldItalic.ttf")
+}
+@font-face {
+    font-family: "MerriweatherSans";
+    font-weight: lighter;
+    font-style: normal;
+    src: url("../fonts/MerriweatherSans/MerriweatherSans-Light.ttf")
+}
+@font-face {
+    font-family: "MerriweatherSans";
+    font-weight: lighter;
+    font-style: italic;
+    src: url("../fonts/MerriweatherSans/MerriweatherSans-LightItalic.ttf")
+}
+
 html
   font-size 10px
   -webkit-text-size-adjust 100%
 
 p
+  margin 0
+  
 h1
 h2
 h3
@@ -21,7 +115,9 @@ a
 
 body
   background-color $bodyBgColor
-  font-family "Segoe UI", "Lucida Grande", Helvetica, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans","wenquanyi micro hei","Hiragino Sans GB", "Hiragino Sans GB W3", Arial, sans-serif
+  font-family "Merriweather"
+  font-weight normal
+  font-style normal
   -moz-osx-font-smoothing grayscale
   -webkit-font-smoothing antialiased
   overflow-x hidden
