@@ -30,7 +30,13 @@ if (page.archive){
           <% } %>
         </div>
         <% if (item.photos) { %>
-          <div class="featured-media"><img src="<%- url_for(item.photos[0]) %>" class="attachment-post-thumbnail size-post-thumbnail"></div>
+          <% if (item.link){ %>
+            <a href="<%- item.link %>index.html" target="_blank">
+          <% } else { %>
+            <a href="<%- config.root %><%- item.path %>index.html">
+          <% } %>
+           <div class="featured-media"><img src="<%- url_for(item.photos[0]) %>" class="attachment-post-thumbnail size-post-thumbnail"></div>
+          </a>
         <% } %>
       </div>
     <% }); %>

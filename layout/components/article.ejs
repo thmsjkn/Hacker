@@ -30,7 +30,14 @@
             <img src="<%- url_for(item.photos[i]) %>" class="attachment-post-thumbnail size-post-thumbnail">
         <% } %>
     <% } else if (item.photos.length && index){ %>
-        <img src="<%- url_for(item.photos[0]) %>" class="attachment-post-thumbnail size-post-thumbnail">
+
+	  <% if (item.link){ %>
+		<a href="<%- item.link %>index.html" target="_blank">
+	  <% } else { %>
+		<a href="<%- config.root %><%- item.path %>index.html">
+	  <% } %>
+      <img src="<%- url_for(item.photos[0]) %>" class="attachment-post-thumbnail size-post-thumbnail">
+      </a>
     <% } else { %>
         <img src="<%- url_for(item.photos) %>" class="attachment-post-thumbnail size-post-thumbnail">
     <% } %>
