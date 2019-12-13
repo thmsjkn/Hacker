@@ -17,23 +17,23 @@ if (page.archive){
       <div class="<%= item.layout %> archive">
         <div class="archive-post">
           <time datetime="<%= item.date.toDate().toISOString() %>">
-            <a href="<%- config.root %><%- item.path %>index.html"><%= item.date.format(config.date_format) %></a>
+            <a href="<%- config.root %><%- item.path %>"><%= item.date.format(config.date_format) %></a>
           </time>
           <% if (item.link){ %>
             <% if (item.title){ %>
-            <h3 class="archive-title"><a href="<%- item.link %>index.html" target="_blank"><span><%= item.title %></span></a></h3>
+            <h3 class="archive-title"><a href="<%- item.link %>" target="_blank"><span><%= item.title %></span></a></h3>
             <% } else { %>
-            <h3 class="archive-title"><a href="<%- item.link %>index.html" target="_blank"><span><%= item.link %></span></a></h3>
+            <h3 class="archive-title"><a href="<%- item.link %>" target="_blank"><span><%= item.link %></span></a></h3>
             <% } %>
           <% } else { %>
-            <h3 class="archive-title"><a href="<%- config.root %><%- item.path %>index.html"><span><%= item.title %></span></a></h3>
+            <h3 class="archive-title"><a href="<%- config.root %><%- item.path %>"><span><%= item.title %></span></a></h3>
           <% } %>
         </div>
         <% if (item.photos && item.photos.length) { %>
           <% if (item.link){ %>
-            <a href="<%- item.link %>index.html" target="_blank">
+            <a href="<%- item.link %>" target="_blank">
           <% } else { %>
-            <a href="<%- config.root %><%- item.path %>index.html">
+            <a href="<%- config.root %><%- item.path %>">
           <% } %>
            <div class="featured-media"><img src="<%- url_for(item.photos[0]) %>" class="attachment-post-thumbnail size-post-thumbnail"></div>
           </a>
